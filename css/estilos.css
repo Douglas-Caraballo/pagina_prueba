@@ -1,0 +1,39 @@
+body{
+    background-color: #4c85c4;
+    margin: 0;
+    padding: 0;
+}
+
+.estilos-header{
+    margin-top: 10px;
+    display: flex;
+    align-content:flex-end;
+    justify-content:space-evenly;
+    text-decoration: none;
+    color: white;   
+}
+.estilos-header a{
+    text-decoration: none;
+    color: white;   
+}
+
+.estilos-footer{
+    color: white;
+    background: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+       
+}
+.estilos-footer a{
+    text-decoration: none;
+    color: white;
+}
+.estilos-footer__informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
