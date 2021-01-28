@@ -60,12 +60,56 @@ body{
     scrollbar-width: none; 
       
 }
+
 .contenedor-principal__animes__item{
     margin-left: 1rem;
+    cursor: pointer;
 }
+/*
+.contenedor-principal__animes__item:hover{
+    transform:scale(1.1);
+}
+*/
 .contenedor-principal__animes__item__portada{
     width: 9rem;
     height: 13rem;
+    transition: all 500ms ease-out;
+}
+
+.contenedor-principal__animes__item__informacion{
+    position: absolute;
+    top: 9.25rem;
+    color: #ffffff;
+    width: 9rem;
+    height: 13rem;
+    transition: all 500ms ease-out;
+    visibility: visible;
+    opacity: 0;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+}
+.contenedor-principal__animes__item__informacion-segunda-fila{
+    position: absolute;
+    bottom: 5.55rem;
+    color: #ffffff;
+    width: 9rem;
+    height: 13rem;
+    transition: all 500ms ease-out;
+    visibility: visible;
+    opacity: 0;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+
+}
+
+.contenedor-principal__animes__item__informacion:hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-principal__animes__item__informacion-segunda-fila:hover{
+    opacity: 1;
+    visibility: visible;
 }
 /*------------------------------Emitidos----------------------------------------------------*/
 .contenedor-secundario{
@@ -97,9 +141,7 @@ body{
     position: absolute;
     bottom: 0%;
     left: 0%;
-    width: 100%;
-    
-       
+    width: 100%; 
 }
 .pie-de-pagina__informacion__link{
     text-decoration: none;
@@ -127,7 +169,22 @@ body{
         bottom: 0;
         left: 0;
         width: 100%;
-    }            
+    }    
+    .contenedor-principal__animes__item__informacion{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
+    }
 }
 
 @media only screen and (max-width:1000px){
@@ -138,6 +195,21 @@ body{
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+    .contenedor-principal__animes__item__informacion{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
     }            
 }
 
@@ -149,6 +221,21 @@ body{
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+    .contenedor-principal__animes__item__informacion{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
     }  
 
 }
@@ -167,6 +254,54 @@ body{
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+    .contenedor-principal__animes__item__informacion{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
+    }  
+
+}
+
+@media only screen and (max-height:500px){
+    .contenedor-principal__animes{
+        display: grid;
+        grid-template-columns: repeat(2, 11rem);
+        padding-top: 1rem;
+        margin-left: 1rem;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: #4c85c4;
+        position: inherit;;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .contenedor-principal__animes__item__informacion{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
     }  
 
 }
