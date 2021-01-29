@@ -21,19 +21,48 @@
         </div>
         <div class="contenedor__busqueda">
             <form action="" class="contenedor__busqueda__formulario-busqueda">
+                <label class="contenedor__busqueda__formulario-busqueda__label">Nombre</label>
+                <input type="text" name="" id="">
                 <label class="contenedor__busqueda__formulario-busqueda__label">Tipo</label>
-                <input list="browsers">
-                    <datalist id="browsers"> 
-                        <option value="TV"></option>
-                        <option value="Pelicula"></option>
-                        <option value="OVA/ONA"></option>
+                <input list="tipe">
+                    <datalist id="tipe"> 
+                        <option value="1">TV</option>
+                        <option value="2">Pelicula</option>
+                        <option value="3">OVA/ONA</option>
                     </datalist>
-                <label class="contenedor__busqueda__formulario-busqueda__label">Genero</label>    
+                <label class="contenedor__busqueda__formulario-busqueda__label">Genero</label> 
+                <input list="genero">
+                    <datalist id="genero">
+                        <option value="Gore">Gore</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Eechi">Eechi</option>
+                    </datalist>  
+                 <div class="contenedor__busqueda__formulario-busqueda__boton">
+                     <button class="contenedor__busqueda__formulario-busqueda__boton__buscar" type="submit">Buscar</button>
+                 </div>  
             </form>
         </div>
-        <div class="Contenedor__animes">
-
+        <div class="contenedor__animes">
+            <div class="contenedor__animes__anime">
+                <img class="contenedor__animes__anime__potada" src="img/anime1.jpeg">
+            </div>
+            <div class="contenedor__animes__anime">
+                <img class="contenedor__animes__anime__potada" src="img/anime1.jpeg">
+            </div>
         </div>
     </div>
+
+    <Footer class="pie-de-pagina">
+        <div class="pie-de-pagina__informacion">
+            <a class="pie-de-pagina__informacion__link" href="acerca-de.html">Acerca de</a>
+            <div>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+
+        </div>
+        
+    </Footer>
 </body>
 </html>

@@ -8,7 +8,6 @@ body{
 
 .cabecera{
     background-color: #4c85c4; 
-    /*margin-top: 1rem;*/
     display: flex;
     align-content:flex-end;
     justify-content:space-evenly;
@@ -38,15 +37,16 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 1rem;
+    gap: 1px;
+    grid-template-areas: "title title title"
+                         "busqueda animes animes ";
         
 }
 .contenedor__titulo{
     padding-left: 1.5rem;
     padding-top: 0.5rem;
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area: title;
     display: flex;
     align-items: center;
 }
@@ -64,13 +64,108 @@ body{
     display: flex;
     background-color: #4c85c4; 
     padding-left: 1.5rem;
-    grid-column: 1 / 2;
-    grid-row: 2/3;
-    align-items: center;
+    grid-area: busqueda;
+    align-content: center;
+    width: 17rem;
+    border-radius: 2%;
 }
 
 .contenedor__busqueda__formulario-busqueda__label{
     font-size: 1rem;
     color: white;
     font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.contenedor__busqueda__formulario-busqueda{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor__busqueda__formulario-busqueda__boton{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor__busqueda__formulario-busqueda__boton__buscar{
+    border: none;
+    color: white;
+    background-color: #2e63d5;
+    text-decoration: none;
+    cursor: pointer;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.contenedor__busqueda__formulario-busqueda__boton__buscar:hover{
+    color: black;
+    background-color: white;
+    border:solid 0.25rem #2e63d5;
+
+}
+
+/*-----------------------------------Animes-------------------------------------------------*/
+
+.contenedor__animes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contenedor__animes__anime__potada{
+    width: 9rem;
+    height: 15rem;
+    padding-right: 0.5rem;
+    border-radius: 1%;
+}
+/*-------------------------------Footer-----------------------------------------------------*/
+.pie-de-pagina{
+    color: white;
+    background: #4c85c4;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%; 
+}
+.pie-de-pagina__informacion__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.pie-de-pagina__informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+/*--------------------------------Responsive------------------------------------------*/
+
+@media only screen and (max-width:400px){
+    .contenedor{
+        gap: 1rem;
+        grid-template-areas: "title title title"
+                             "busqueda busqueda busqueda"
+                             "animes animes animes";
+    }
+    .contenedor__busqueda{
+        width: 93%;
+        align-content: center;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: #4c85c4;
+        position: inherit;;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
 }
