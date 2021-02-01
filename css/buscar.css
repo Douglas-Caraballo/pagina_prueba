@@ -35,11 +35,13 @@ body{
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 1px;
-    grid-template-areas: "title title title"
-                         "busqueda animes animes ";
+    grid-template-columns: 30%,70%;
+    gap: 0.6rem;
+    grid-template-areas: "title title"
+                         "busqueda animes"
+                         "lista lista";
+    padding-left: 1rem;
+    padding-right: 1rem;
         
 }
 .contenedor__titulo{
@@ -122,14 +124,33 @@ body{
 .contenedor__animes__anime__potada{
     width: 9rem;
     height: 15rem;
-    padding-right: 0.5rem;
-    border-radius: 1%;
+    margin-right: 0.5rem;
+    border-radius: 3%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/*--------------------------------------Numeros de paginas----------------------------------*/
+.contenedor__paginas{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    grid-area: lista;
+}
+
+.contenedor__paginas__link{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: white;
+    font-weight: bold;
+    
 }
 /*-------------------------------Footer-----------------------------------------------------*/
 .pie-de-pagina{
     color: white;
     background: #4c85c4;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     left: 0%;
     width: 100%; 
@@ -151,14 +172,34 @@ body{
 @media only screen and (max-width:400px){
     .contenedor{
         gap: 1rem;
-        grid-template-areas: "title title title"
-                             "busqueda busqueda busqueda"
-                             "animes animes animes";
+        grid-template-areas: "title title"
+                             "busqueda busqueda"
+                             "animes animes"
+                             "lista lista";
     }
     .contenedor__busqueda{
-        width: 93%;
+        width: 95%;
         align-content: center;
+        justify-content: center;
+        padding-left: 1rem;
     }
+    .contenedor__animes{
+        padding-left: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: #4c85c4;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+}
+/*
+@media only screen and (max-width:500px){
     .pie-de-pagina{
         color: white;
         background: #4c85c4;
@@ -167,5 +208,39 @@ body{
         left: 0;
         width: 100%;
     }
+    .contenedor{
+        gap: 1rem;
+        grid-template-areas: "title title "
+                             "busqueda busqueda"
+                             "animes animes";
+    }
+    .contenedor__busqueda{
+        width: 93%;
+        align-content: center;
+        justify-content: center;
+    }
 
 }
+
+@media only screen and (max-width:600px){
+    .pie-de-pagina{
+        color: white;
+        background: #4c85c4;
+        position: inherit;;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .contenedor{
+        gap: 1rem;
+        grid-template-areas: "title title"
+                             "busqueda busqueda"
+                             "animes animes";
+    }
+    .contenedor__busqueda{
+        width: 93%;
+        align-content: center;
+        justify-content: center;
+    }
+}*/
+
