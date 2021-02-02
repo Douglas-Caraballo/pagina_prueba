@@ -1,0 +1,170 @@
+body{
+    background-color: #2e63d5; ;
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------Header---------------------------------------------------*/
+
+.cabecera{
+    background-color: #4c85c4; 
+    display: flex;
+    align-content:flex-end;
+    justify-content:space-evenly;
+    text-decoration: none;
+    color: white;
+    height: 2.5rem;
+    padding-top: 1rem;
+    font-weight: bold;
+     
+}
+
+.cabecera__logo{
+    padding-bottom: 1rem;
+    width: 10rem;
+    display: flex;
+    align-content: flex-start;
+}
+
+.cabecera__link{
+    text-decoration: none;
+    color: white;   
+}
+/*-----------------------------------------------------------------------------------------*/
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor__slider{
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+
+
+/*----------------------------------Carta--------------------------------------------------*/
+.wrapper{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.carta{
+    background-color: #2e63d5;
+    border-radius: 3%;
+    text-align: center;
+    width: 25rem;
+    height: 30rem;
+    box-shadow: 0rem 1.5rem 2.5rem rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+.carta__imagen__imagen{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 0.7rem;
+    box-shadow: 0rem 1.5rem 2.5rem rgba(0, 0, 0, 0.5);
+}
+
+.carta__nombre{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.carta__descripcion{
+    font-size: 0.8rem;
+    color: white;
+}
+
+/*-----------------------------------Formulario---------------------------------------------*/
+
+.contenedor__formulario{
+    margin-left: 3rem;
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__formulario__titulo{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.contenedor__formulario__informacion{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor__formulario__formulario{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 1.5rem 2.5rem rgba(0, 0, 0, 0.3);
+    width: 50rem;
+    border-radius: 2%;
+}
+
+.formulario_label{
+    color: white;
+    font-weight: bold;
+    text-align:start;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.formulario_text{
+    margin-left: 1rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.formulario_boton{
+    width: 11rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+/*----------------------------------Footer-------------------------------------------------*/
+.pie-de-pagina{
+    color: white;
+    background: #4c85c4;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+}
+.pie-de-pagina__informacion__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.pie-de-pagina__informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:600px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor__formulario{
+        margin-left: 2rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor__formulario__formulario{
+        width: 16rem;
+        margin-bottom: 2rem;
+    }
+}

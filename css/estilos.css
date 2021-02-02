@@ -63,6 +63,7 @@ body{
 .contenedor-principal__animes__item{
     margin-left: 1rem;
     cursor: pointer;
+    
 }
 /*
 .contenedor-principal__animes__item:hover{
