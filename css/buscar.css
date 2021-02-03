@@ -1,5 +1,5 @@
 body{
-    background-color: #2e63d5; ;
+    background-color: lightblue; ;
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,7 @@ body{
 /*---------------------------------Header---------------------------------------------------*/
 
 .cabecera{
-    background-color: #4c85c4; 
+    background-color: black; 
     display: flex;
     align-content:flex-end;
     justify-content:space-evenly;
@@ -47,7 +47,7 @@ body{
 .contenedor__titulo{
     padding-left: 1.5rem;
     padding-top: 0.5rem;
-    color: white;
+    color: black;
     grid-area: title;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ body{
 
 .contenedor__busqueda{
     display: flex;
-    background-color: #4c85c4; 
+    background-color: black; 
     padding-left: 1.5rem;
     grid-area: busqueda;
     align-content: center;
@@ -95,8 +95,8 @@ body{
 
 .contenedor__busqueda__formulario-busqueda__boton__buscar{
     border: none;
-    color: white;
-    background-color: #2e63d5;
+    color: black;
+    background-color: white;
     text-decoration: none;
     cursor: pointer;
     width: 15rem;
@@ -104,6 +104,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     transition-duration: 0.3s;
+    border-radius: 2rem;
 }
 
 .contenedor__busqueda__formulario-busqueda__boton__buscar:hover{
@@ -142,14 +143,14 @@ body{
 .contenedor__paginas__link{
     text-decoration: none;
     margin-left: 1rem;
-    color: white;
+    color: black;
     font-weight: bold;
     
 }
 /*-------------------------------Footer-----------------------------------------------------*/
 .pie-de-pagina{
     color: white;
-    background: #4c85c4;
+    background: black;
     position: fixed;
     bottom: 0%;
     left: 0%;
@@ -190,7 +191,7 @@ body{
     }
     .pie-de-pagina{
         color: white;
-        background: #4c85c4;
+        background: black;
         position: fixed;
         bottom: 0;
         left: 0;

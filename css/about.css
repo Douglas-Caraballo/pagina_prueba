@@ -1,12 +1,12 @@
 body{
-    background-color: #2e63d5; ;
+    background-color: lightblue; ;
     margin: 0;
     padding: 0;
 }
 /*---------------------------------Header---------------------------------------------------*/
 
 .cabecera{
-    background-color: #4c85c4; 
+    background-color: black; 
     display: flex;
     align-content:flex-end;
     justify-content:space-evenly;
@@ -29,10 +29,10 @@ body{
     text-decoration: none;
     color: white;   
 }
-/*-----------------------------------------------------------------------------------------*/
+/*--------------------------------------body-----------------------------------------------*/
 .contenedor{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
 .contenedor__slider{
@@ -49,8 +49,8 @@ body{
     justify-content: center;
 }
 .carta{
-    background-color: #2e63d5;
-    border-radius: 3%;
+    background-color: lightblue;
+    border-radius: 2%;
     text-align: center;
     width: 25rem;
     height: 30rem;
@@ -71,67 +71,39 @@ body{
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .carta__descripcion{
     font-size: 0.8rem;
-    color: white;
+    color: black;
+    margin-bottom: 9rem;
 }
 
-/*-----------------------------------Formulario---------------------------------------------*/
-
-.contenedor__formulario{
-    margin-left: 3rem;
-    width: 56%;
+.carta__redes{
+    color: white;
+    font-size: 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
-.contenedor__formulario__titulo{
-    color: white;
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
+.carta__redes__icono{
+    border-right: 0.1rem solid;
+    height: 100%;
+    width: 100%;
 
-.contenedor__formulario__informacion{
-    color: white;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
 }
-
-.contenedor__formulario__formulario{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0rem 1.5rem 2.5rem rgba(0, 0, 0, 0.3);
-    width: 50rem;
-    border-radius: 2%;
-}
-
-.formulario_label{
-    color: white;
-    font-weight: bold;
-    text-align:start;
-    padding-bottom: 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-.formulario_text{
-    margin-left: 1rem;
-    width: 10rem;
-    margin-bottom: 1rem;
-}
-
-.formulario_boton{
-    width: 11rem;
-    height: 3rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+.no_borde{
+    border-right: none;
 }
 /*----------------------------------Footer-------------------------------------------------*/
 .pie-de-pagina{
     color: white;
-    background: #4c85c4;
+    background: black;
     position:fixed;
     bottom: 0;
     left: 0;
@@ -148,8 +120,8 @@ body{
     justify-content: space-around;
 }
 
-/*----------------------------------------------------------------------------------------*/
-
+/*----------------------------------------Responsive------------------------------------------------*/
+/*
 @media only screen and (max-width:600px){
     .contenedor{
         display: flex;
@@ -168,3 +140,4 @@ body{
         margin-bottom: 2rem;
     }
 }
+*/
