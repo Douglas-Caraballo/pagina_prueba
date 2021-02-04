@@ -119,6 +119,7 @@ body{
 .contenedor__animes{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 
@@ -188,7 +189,13 @@ body{
         padding-left: 2rem;
         display: flex;
         justify-content: center;
+      /* Logré el scrol pero no se como implementarlo 
+        flex-wrap: nowrap;
+        overflow-x: scroll; 
+        width: 100%;
+        margin-right: 18rem;*/
     }
+
     .pie-de-pagina{
         color: white;
         background: black;
@@ -199,6 +206,8 @@ body{
     }
 
 }
+
+
 /*
 @media only screen and (max-width:500px){
     .pie-de-pagina{

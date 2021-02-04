@@ -1,0 +1,85 @@
+body{
+    background-color: lightblue; ;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------------Header---------------------------------------------------*/
+
+.cabecera{
+    background-color: black; 
+    display: flex;
+    align-content:flex-end;
+    justify-content:space-evenly;
+    text-decoration: none;
+    color: white;
+    height: 2.5rem;
+    padding-top: 1rem;
+    font-weight: bold;
+     
+}
+
+.cabecera__logo{
+    padding-bottom: 1rem;
+    width: 10rem;
+    display: flex;
+    align-content: flex-start;
+}
+
+.cabecera__link{
+    text-decoration: none;
+    color: white;   
+}
+
+/*--------------------------------Informacion-----------------------------------------------*/
+.contenedor__informacion{
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+.contenedor__imagen{
+    display: flex;
+    justify-content: center;
+}
+.contenedor__imagen__imagen-referencia{
+    width: 13rem;
+    height: 15rem;
+}
+
+.contenedor__formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*-----------------------------------------Formilario---------------------------------------*/
+.contenedor__formulario__label{
+    color: white;
+    font-weight: bold;
+    
+}
+/*-------------------------------Footer-----------------------------------------------------*/
+.pie-de-pagina{
+    color: white;
+    background: black;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%; 
+}
+.pie-de-pagina__informacion__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.pie-de-pagina__informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
