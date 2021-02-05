@@ -119,18 +119,20 @@ body{
 .contenedor__animes{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
-
-
-.contenedor__animes__anime__potada{
+.contenedor__animes__anime{
     width: 9rem;
     height: 15rem;
     margin-right: 0.5rem;
-    border-radius: 3%;
     cursor: pointer;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.contenedor__animes__anime__potada{
+    width: 100%;    
+    height: 100%;
+    border-radius: 3%;
 }
 /*--------------------------------------Numeros de paginas----------------------------------*/
 .contenedor__paginas{
@@ -186,14 +188,15 @@ body{
         padding-left: 1rem;
     }
     .contenedor__animes{
-        padding-left: 2rem;
         display: flex;
-        justify-content: center;
-      /* Logré el scrol pero no se como implementarlo 
         flex-wrap: nowrap;
-        overflow-x: scroll; 
+        overflow-x: scroll;
         width: 100%;
-        margin-right: 18rem;*/
+        margin-right: 18rem;
+    }
+
+    .contenedor__animes__anime{
+        min-width: 8.5rem;
     }
 
     .pie-de-pagina{

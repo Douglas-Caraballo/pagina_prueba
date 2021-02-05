@@ -97,7 +97,7 @@ body{
 }
 .contenedor-principal__animes__item__informacion-segunda-fila{
     position: absolute;
-    bottom: 5.55rem;
+    top: 23rem;
     color: #ffffff;
     width: 9rem;
     height: 13rem;
