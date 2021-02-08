@@ -21,7 +21,9 @@ body{
 
 .cabecera__logo{
     padding-bottom: 1rem;
+    margin-top: -0.3rem;
     width: 10rem;
+    height: 2rem;
     display: flex;
     align-content: flex-start;
 }
@@ -29,6 +31,24 @@ body{
 .cabecera__link{
     text-decoration: none;
     color: white;   
+}
+
+.cabecera__buscar{
+    width: 4rem;
+    height: 1.7rem;
+    margin-top: -0.3rem;
+    transition: 0.4s;
+    border-radius: 2rem;
+}
+
+.cabecera__buscar:focus{
+    width: 7rem;
+}
+.cabecera__buscar__boton{
+    border: none;
+    border-radius: 2rem;
+    height: 1.7rem;
+    margin-left: -2.5rem;
 }
 
 /*----------------------------------------Body----------------------------------------------*/
@@ -47,7 +67,7 @@ body{
 .contenedor__titulo{
     padding-left: 1.5rem;
     padding-top: 0.5rem;
-    color: black;
+    color: #0c2026;
     grid-area: title;
     display: flex;
     align-items: center;
@@ -64,7 +84,7 @@ body{
 
 .contenedor__busqueda{
     display: flex;
-    background-color: black; 
+    background-color: #30839f; 
     padding-left: 1.5rem;
     grid-area: busqueda;
     align-content: center;
@@ -110,7 +130,7 @@ body{
 .contenedor__busqueda__formulario-busqueda__boton__buscar:hover{
     color: black;
     background-color: white;
-    border:solid 0.25rem #2e63d5;
+    border:solid 0.25rem #30839f;
 
 }
 

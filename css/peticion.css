@@ -21,7 +21,9 @@ body{
 
 .cabecera__logo{
     padding-bottom: 1rem;
+    margin-top: -0.3rem;
     width: 10rem;
+    height: 2rem;
     display: flex;
     align-content: flex-start;
 }
@@ -29,6 +31,23 @@ body{
 .cabecera__link{
     text-decoration: none;
     color: white;   
+}
+.cabecera__buscar{
+    width: 4rem;
+    height: 1.7rem;
+    margin-top: -0.3rem;
+    transition: 0.4s;
+    border-radius: 2rem;
+}
+
+.cabecera__buscar:focus{
+    width: 7rem;
+}
+.cabecera__buscar__boton{
+    border: none;
+    border-radius: 2rem;
+    height: 1.7rem;
+    margin-left: -2.5rem;
 }
 
 /*--------------------------------Informacion-----------------------------------------------*/

@@ -10,12 +10,21 @@
 </head>
 <body>
     <header class="cabecera">
-        <img class="cabecera__logo" src="img/Logo.png">
+        <a href="index.html"><img class="cabecera__logo" src="img/Logo.png"></a>
         <a class="cabecera__link" href="index.html">Inicio</a>
-        <a class="cabecera__link" href="buscar.html"> 
-        <i class="fas fa-search"></i> Buscar</a>
+        <a class="cabecera__link" href="buscar.html">Animes</a>
+        <form action="">
+            <input class="cabecera__buscar" type="text">
+            <button class="cabecera__buscar__boton" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
     </header>
+
     <div class="contenedor"> 
+        <div class="contenedor__notifificacion">
+            <a href=""><i class="fas fa-bell"></i></a>
+        </div>
     <div class="contenedor-principal">
         <div class="contenedor-principal__contenedor-titulos">
             <H3>Animes de la Temporada</H3>
@@ -63,6 +72,20 @@
                     <p>una chica renace en el cuerpo de una araña en un mundo de fantasía</p>
                 </div>
             </article>
+            <article class="contenedor-principal__animes__item">
+                <img class="contenedor-principal__animes__item__portada" src="img/anime7.jpg">
+                <div class="contenedor-principal__animes__item__informacion-segunda-fila">
+                    <h4 class="contenedor-principal__animes__item__informacion__titulo">Uma Musume: Pretty Derby (TV) Season 2</h4>
+                    <p>chicas con las orejas y la cola de un caballo</p>
+                </div>
+            </article>
+            <article class="contenedor-principal__animes__item">
+                <img class="contenedor-principal__animes__item__portada" src="img/anime8.jpg">
+                <div class="contenedor-principal__animes__item__informacion-segunda-fila">
+                    <h4 class="contenedor-principal__animes__item__informacion__titulo"><i class="fas fa-plus"></i></h4>
+                    <p>Ver más</p>
+                </div>
+            </article>
         </div>
     </div> 
     <div class="contenedor-secundario">  
@@ -87,6 +110,10 @@
                 <img class="contenedor-secundario__capitulos__item__imagen" src="img/anime4.jpeg">
                 <p class="contenedor-secundario__capitulos__item__descripcion">Capitulo N°4</p>
             </article>
+            <article class="contenedor-secundario__capitulos__item">
+                <img class="contenedor-secundario__capitulos__item__imagen" src="img/arrow-down-sign-to-navigate.png">
+                <p class="contenedor-secundario__capitulos__item__descripcion">Ver más</p>
+            </article>
         </div>
     </div>
     </div>
@@ -94,12 +121,17 @@
     <Footer class="pie-de-pagina">
         <div class="pie-de-pagina__informacion">
             <a class="pie-de-pagina__informacion__link" href="about.html">Quienes somos</a>
+            <a class="pie-de-pagina__informacion__link" href="peticion.html">Peticiones</a>
             <div>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-twitter-square"></i>
             </div>
-
         </div>
+       <div class="pie-de-pagina__suscripcion">
+          <label for="">Suscribeté aquí</label>
+          <input class="pie-de-pagina__suscripcion__input" type="text" name="" id="">
+          <input class="pie-de-pagina__suscripcion__boton" type="submit" value="suscribir">
+       </div>
     </Footer>
 </body>
 </html>

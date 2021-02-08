@@ -17,17 +17,33 @@ body{
     font-weight: bold;
      
 }
-
 .cabecera__logo{
     padding-bottom: 1rem;
+    margin-top: -0.3rem;
     width: 10rem;
+    height: 2rem;
     display: flex;
     align-content: flex-start;
 }
-
 .cabecera__link{
     text-decoration: none;
     color: white;   
+}
+.cabecera__buscar{
+    width: 4rem;
+    height: 1.7rem;
+    margin-top: -0.3rem;
+    transition: 0.4s;
+    border-radius: 2rem;
+}
+.cabecera__buscar:focus{
+    width: 8rem;
+}
+.cabecera__buscar__boton{
+    border: none;
+    border-radius: 2rem;
+    height: 1.7rem;
+    margin-left: -2.5rem;
 }
 /*----------------------------------------Body----------------------------------------------*/
 .contenedor{
@@ -36,21 +52,41 @@ body{
     gap: 3rem;
         
 }
-
 .contenedor-principal__contenedor-titulos__icono{
     width: 2rem;
     height: 2rem;
     padding: 1rem;
 
 }
-
 .contenedor-principal__contenedor-titulos{
     padding-left: 1rem;
     padding-top: 1rem;
-    color: black;
+    color: #0c2026;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/*-----------------------------------------CTA----------------------------------------------*/
+.contenedor__notifificacion{
+    top: 15%;
+    position:fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    z-index: 100;
+    background-color: #30839f;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+.fa-bell{
+    text-decoration: none;
+    color: #0c2026;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid white 0.3rem;
+    border-radius: 50%;
 }
 
 /*------------------------------------Animes de temporada-----------------------------------*/
@@ -66,23 +102,16 @@ body{
     scrollbar-width: none; 
       
 }
-
 .contenedor-principal__animes__item{
     margin-left: 1rem;
     cursor: pointer;
     
 }
-/*
-.contenedor-principal__animes__item:hover{
-    transform:scale(1.1);
-}
-*/
 .contenedor-principal__animes__item__portada{
     width: 9rem;
     height: 13rem;
     transition: all 500ms ease-out;
 }
-
 .contenedor-principal__animes__item__informacion{
     position: absolute;
     top: 9.25rem;
@@ -108,34 +137,36 @@ body{
     background: rgb(0, 0, 0, 0.5);
 
 }
-
 .contenedor-principal__animes__item__informacion:hover{
     opacity: 1;
     visibility: visible;
 }
-
 .contenedor-principal__animes__item__informacion-segunda-fila:hover{
     opacity: 1;
     visibility: visible;
 }
 /*------------------------------Emitidos----------------------------------------------------*/
 .contenedor-secundario{
-    padding-left: 3rem;
+    padding-left: 3rem; 
 }
-
 .contenedor-secundario__capitulos__item{
     margin-left: 1rem;
     display: flex;
     justify-content: left;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.5s;
 }
-
+.contenedor-secundario__capitulos__item:hover{
+    background: #30839f;
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding-left: 1rem;
+}
 .contenedor-secundario__capitulos__item__descripcion{
     margin-left: 1rem;
     color: black;
     font-size: 1.3rem;
 }
-
 .contenedor-secundario__capitulos__item__imagen{
     width: 5rem;
     height: 5rem;
@@ -145,10 +176,11 @@ body{
 .pie-de-pagina{
     color: white;
     background: black;
-    position:fixed;
+    /*position:fixed;*/
     bottom: 0;
     left: 0;
     width: 100%; 
+    padding-bottom: 1rem;
 }
 .pie-de-pagina__informacion__link{
     text-decoration: none;
@@ -159,7 +191,28 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.pie-de-pagina__suscripcion{
+    display: flex;
+    justify-content: end;
+}
+.pie-de-pagina__suscripcion__input{
+    width: 7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+    margin-left: 1rem;
+}
+.pie-de-pagina__suscripcion__input:focus{
+    width: 15rem;
+}
+.pie-de-pagina__suscripcion__boton{
+    border: none;
+    border-radius: 2rem;
+    height: 1.5rem;
+    margin-left: -1.5rem;
+    background-color: #30839f;
 }
 /*--------------------------------------Resposive-----------------------------------------------*/
 @media only screen and (max-width:400px){
@@ -192,6 +245,10 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila:hover{
         display: none;
     }
+    .pie-de-pagina__suscripcion__input:focus{
+        width: 7rem;
+    }
+
 }
 
 @media only screen and (max-width:1000px){
