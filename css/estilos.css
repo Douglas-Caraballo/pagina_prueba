@@ -76,8 +76,6 @@ body{
     flex-direction: column;
     font-size: 1.5rem;
     z-index: 100;
-    background-color: #30839f;
-    border-radius: 50%;
     margin-right: 0.8rem;
 }
 .fa-bell{
@@ -85,10 +83,18 @@ body{
     color: #0c2026;
     margin: 0.5rem;
     padding: 0.5rem;
-    border: solid white 0.3rem;
+    border: solid white 0.2rem;
     border-radius: 50%;
+    margin-left: 0.2rem;
 }
-
+.contenedor__notifificacion__boton{
+    border: none;
+    border-radius: 50%;
+    background-color: #30839f;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
 /*------------------------------------Animes de temporada-----------------------------------*/
 
 .contenedor-principal__animes{
@@ -176,8 +182,7 @@ body{
 .pie-de-pagina{
     color: white;
     background: black;
-    /*position:fixed;*/
-    bottom: 0;
+     bottom: 0;
     left: 0;
     width: 100%; 
     padding-bottom: 1rem;
@@ -213,19 +218,45 @@ body{
     height: 1.5rem;
     margin-left: -1.5rem;
     background-color: #30839f;
+    cursor: pointer;
 }
-/*--------------------------------------Resposive-----------------------------------------------*/
+/*--------------------------------------Resposive------------------------------------------*/
 @media only screen and (max-width:400px){
+    .contenedor__notifificacion{
+        top: 35%;
+    }
     .contenedor-principal__animes{
         display: grid;
         grid-template-columns: repeat(2, 11rem);
         padding-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 0rem;
+    }
+    .cabecera{
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
     }
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -239,26 +270,21 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
-    .contenedor-principal__animes__item__informacion:hover{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
-        display: none;
-    }
     .pie-de-pagina__suscripcion__input:focus{
         width: 7rem;
     }
-
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (min-width:1000px){
+    
      .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
+        margin-top: 8rem;
     }
     .contenedor-principal__animes__item__informacion{
         display: none;
@@ -269,22 +295,17 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
-    .contenedor-principal__animes__item__informacion:hover{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
-        display: none;
-    }            
 }
 
-@media only screen and (max-width:1100px){
+@media only screen and (min-width:1100px){
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
+        padding-bottom: 1rem;
     }
     .contenedor-principal__animes__item__informacion{
         display: none;
@@ -295,29 +316,48 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
-    .contenedor-principal__animes__item__informacion:hover{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
-        display: none;
-    }  
-
 }
 
-@media only screen and (max-height:600px){
+/*@media only screen and (max-height:600px){
     .contenedor-principal__animes{
         display: grid;
         grid-template-columns: repeat(3, 11rem);
         padding-top: 1rem;
         margin-left: 1rem;
     }
+    .contenedor__notifificacion{
+        top: 35%;
+    }
+    .cabecera{
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
+    }
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
+        padding-bottom: 1rem;
     }
     .contenedor-principal__animes__item__informacion{
         display: none;
@@ -328,14 +368,49 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
-    .contenedor-principal__animes__item__informacion:hover{
-        display: none;
+}*/
+@media only screen and (max-width:600px){
+    .contenedor-principal__animes{
+        display: grid;
+        grid-template-columns: repeat(2, 11rem);
+        padding-top: 1rem;
+        margin-left: 1rem;
     }
-    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
-        display: none;
-    }  
-
-}
+    .contenedor__notifificacion{
+        top: 35%;
+    }
+    .cabecera{
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+}    
 
 @media only screen and (max-height:500px){
     .contenedor-principal__animes{
@@ -347,7 +422,7 @@ body{
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -361,11 +436,17 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
-    .contenedor-principal__animes__item__informacion:hover{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
-        display: none;
-    }  
 
 }
+@media only screen and (min-width:1440px){
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 1rem;
+        margin-top: 14rem;
+    }
+}    

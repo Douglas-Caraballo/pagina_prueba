@@ -50,6 +50,35 @@ body{
     margin-left: -2.5rem;
 }
 
+/*-----------------------------------------CTA----------------------------------------------*/
+.contenedor__notifificacion{
+    top: 25%;
+    position:fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    z-index: 100;
+    margin-right: 0.8rem;
+}
+.fa-bell{
+    text-decoration: none;
+    color: #0c2026;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid white 0.2rem;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+}
+.contenedor__notifificacion__boton{
+    border: none;
+    border-radius: 50%;
+    background-color: #30839f;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
 /*--------------------------------Informacion-----------------------------------------------*/
 .contenedor__informacion{
     padding-top: 3rem;
@@ -72,7 +101,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    background-color: black;
+    background-color: #30839f;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -80,16 +109,25 @@ body{
 .contenedor__formulario__label{
     color: white;
     font-weight: bold;
-    
 }
+.contenedor__formulario__boton{
+    border: none;
+    height: 2rem;
+    border-radius: 1rem;
+}
+.contenedor__formulario__boton:hover{
+    color: white;
+    border:solid white 1px
+}
+
 /*-------------------------------Footer-----------------------------------------------------*/
 .pie-de-pagina{
     color: white;
     background: black;
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
     width: 100%; 
+    padding-bottom: 2rem;
 }
 .pie-de-pagina__informacion__link{
     text-decoration: none;
@@ -100,5 +138,49 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+.pie-de-pagina__suscripcion{
+    display: flex;
+    justify-content: end;
+}
+.pie-de-pagina__suscripcion__input{
+    width: 7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+    margin-left: 1rem;
+}
+.pie-de-pagina__suscripcion__input:focus{
+    width: 15rem;
+}
+.pie-de-pagina__suscripcion__boton{
+    border: none;
+    border-radius: 2rem;
+    height: 1.5rem;
+    margin-left: -1.5rem;
+    background-color: #30839f;
+    cursor: pointer;
+}
+
+/*-----------------------------Respomsive---------------------------------------------------*/
+@media only screen and (max-width:600px){
+    .contenedor__informacion{
+        width: 90%;
+        display: flex;
+        margin: 1rem;
+    }
+    .contenedor__formulario{
+        display: flex;
+        align-content: center;
+    }
+    .contenedor__formulario__formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor__formulario__input{
+        width: 10rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
 }
