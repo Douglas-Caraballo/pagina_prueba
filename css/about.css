@@ -194,11 +194,59 @@ body{
 /*----------------------------------------Responsive------------------------------------------------*/
 
 @media only screen and (max-width:600px){
+    .cabecera{
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
+    }
     .contenedor{
         display: flex;
         flex-direction: column;
     }
     .carta{
         width: 80%;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .pie-de-pagina__informacion{
+        display: block;
+        height: auto;
+        text-align: center;
+        border-top: solid white 1px;
+    }
+    .pie-de-pagina__informacion__link{
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .pie-de-pagina__informacion__redes{
+        margin-top: 0.5rem;
+    }
+    .pie-de-pagina__suscripcion{
+        display: block;
+        text-align: center;
+        padding-top: 0.5rem;
     }
 }

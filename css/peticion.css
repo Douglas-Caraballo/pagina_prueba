@@ -124,6 +124,7 @@ body{
 .pie-de-pagina{
     color: white;
     background: black;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%; 
@@ -139,7 +140,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .pie-de-pagina__suscripcion{
     display: flex;
@@ -164,7 +165,29 @@ body{
 }
 
 /*-----------------------------Respomsive---------------------------------------------------*/
-@media only screen and (max-width:600px){
+@media only screen and (max-width:800px){
+    .cabecera{
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
+    }
     .contenedor__informacion{
         width: 90%;
         display: flex;
@@ -182,5 +205,42 @@ body{
         width: 10rem;
         margin-bottom: 1rem;
         margin-top: 0.5rem;
+    }
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .pie-de-pagina__informacion{
+        display: block;
+        height: auto;
+        text-align: center;
+        margin-top: 7rem;
+    }
+    .pie-de-pagina__informacion__link{
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .pie-de-pagina__suscripcion{
+        display: block;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .pie-de-pagina__informacion__redes{
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width:1100px){
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
