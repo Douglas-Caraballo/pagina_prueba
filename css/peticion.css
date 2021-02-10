@@ -144,7 +144,7 @@ body{
 }
 .pie-de-pagina__suscripcion{
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 .pie-de-pagina__suscripcion__input{
     width: 7rem;
@@ -165,7 +165,7 @@ body{
 }
 
 /*-----------------------------Respomsive---------------------------------------------------*/
-@media only screen and (max-width:800px){
+@media only screen and (max-width:610px){
     .cabecera{
         height: auto;
         display: block;
@@ -238,9 +238,10 @@ body{
     .pie-de-pagina{
         color: white;
         background: black;
-        position: fixed;
+        position: inherit;
         bottom: 0;
         left: 0;
         width: 100%;
+        margin-top: 2rem;
     }
 }

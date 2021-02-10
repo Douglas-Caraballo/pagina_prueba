@@ -222,7 +222,7 @@ body{
 
 .pie-de-pagina__suscripcion{
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 .pie-de-pagina__suscripcion__input{
     width: 7rem;
@@ -321,50 +321,97 @@ body{
 
 }
 
-
-/*
-@media only screen and (max-width:500px){
-    .pie-de-pagina{
-        color: white;
-        background: #4c85c4;
-        position: inherit;;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-    .contenedor{
-        gap: 1rem;
-        grid-template-areas: "title title "
-                             "busqueda busqueda"
-                             "animes animes";
-    }
-    .contenedor__busqueda{
-        width: 93%;
-        align-content: center;
-        justify-content: center;
-    }
-
-}
-
-@media only screen and (max-width:600px){
-    .pie-de-pagina{
-        color: white;
-        background: #4c85c4;
-        position: inherit;;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
+@media only screen and (max-width:610px){
     .contenedor{
         gap: 1rem;
         grid-template-areas: "title title"
                              "busqueda busqueda"
-                             "animes animes";
+                             "animes animes"
+                             "lista lista";
+    }
+    .cabecera{
+
+        height: auto;
+        display: block;
+    }
+    .cabecera__formulario{
+        border-top: solid white 1px;
+    }
+    .cabecera__link{
+        display: block;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid white 1px;
+        padding-left: 0.5rem;
+    }
+    .cabecera__buscar{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 97%;
+    }
+    .cabecera__buscar:focus{
+        width: 97%;
     }
     .contenedor__busqueda{
-        width: 93%;
+        width: 95%;
         align-content: center;
         justify-content: center;
+        padding-left: 1rem;
     }
-}*/
+    .contenedor__animes{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        margin-right: 18rem;
+    }
 
+    .contenedor__animes__anime{
+        min-width: 8.5rem;
+    }
+
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .pie-de-pagina__informacion{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    .pie-de-pagina__informacion__link{
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .pie-de-pagina__suscripcion{
+        display: block;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .pie-de-pagina__informacion__redes{
+        margin-top: 0.5rem;
+    }
+
+}
+@media only screen and (max-width:1100px){
+    .pie-de-pagina{
+        color: white;
+        background: black;
+        position: unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width:1500px){
+    .pie-de-pagina{
+        position: unset;
+        bottom: 0;     
+    }
+}

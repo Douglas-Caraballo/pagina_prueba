@@ -293,17 +293,6 @@ body{
     }
 }
 
-@media only screen and (max-width:1300px){
-    .pie-de-pagina{
-        color: white;
-        background: black;
-        position: unset;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-}
 
 @media only screen and (max-width:600px){
     .contenedor-principal__animes{
@@ -356,33 +345,15 @@ body{
         display: none;
     }
 
-}    
-
-@media only screen and (max-height:500px){
-    .contenedor-principal__animes{
-        display: grid;
-        grid-template-columns: repeat(2, 11rem);
-        padding-top: 1rem;
-        margin-left: 1rem;
-    }
+}  
+@media only screen and (max-width:1000px){
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;
+        position: unset;
         bottom: 0;
         left: 0;
         width: 100%;
+        padding-bottom: 1rem;
     }
-
-    .contenedor-principal__animes__item__informacion{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion__titulo{
-        display: none;
-    }
-    .contenedor-principal__animes__item__informacion-segunda-fila{
-        display: none;
-    }
-
 }
- 
