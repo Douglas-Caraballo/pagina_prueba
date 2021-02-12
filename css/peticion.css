@@ -238,7 +238,7 @@ body{
     .pie-de-pagina{
         color: white;
         background: black;
-        position: inherit;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;

@@ -143,11 +143,27 @@ body{
     background: rgb(0, 0, 0, 0.5);
 
 }
+.contenedor-principal__animes__item__informacion-tercera-fila{
+    position: absolute;
+    top: 36.75rem;
+    color: #ffffff;
+    width: 9rem;
+    height: 13rem;
+    transition: all 500ms ease-out;
+    visibility: visible;
+    opacity: 0;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);  
+}
 .contenedor-principal__animes__item__informacion:hover{
     opacity: 1;
     visibility: visible;
 }
 .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-principal__animes__item__informacion-tercera-fila:hover{
     opacity: 1;
     visibility: visible;
 }
@@ -288,6 +304,18 @@ body{
     .contenedor-principal__animes__item__informacion-segunda-fila{
         display: none;
     }
+    .contenedor-principal__animes__item__informacion-tercera-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-tercera-fila:hover{
+        display: none;
+    }
     .pie-de-pagina__suscripcion__input:focus{
         width: 7rem;
     }
@@ -342,6 +370,18 @@ body{
         display: none;
     }
     .contenedor-principal__animes__item__informacion-segunda-fila{
+        display: none;
+    }  
+    .contenedor-principal__animes__item__informacion-tercera-fila{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion__titulo:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-segunda-fila:hover{
+        display: none;
+    }
+    .contenedor-principal__animes__item__informacion-tercera-fila:hover{
         display: none;
     }
 
