@@ -241,6 +241,12 @@ body{
     background-color: #30839f;
     cursor: pointer;
 }
+.pie-de-pagina__copyr{
+    text-align: center;
+    margin-top: 1rem;
+    border-top: solid 1px;
+    padding-top: 0.5rem;
+}
 /*--------------------------------Responsive------------------------------------------*/
 
 @media only screen and (max-width:400px){
@@ -287,11 +293,9 @@ body{
         width: 100%;
         margin-right: 18rem;
     }
-
     .contenedor__animes__anime{
         min-width: 8.5rem;
     }
-
     .pie-de-pagina{
         color: white;
         background: black;
@@ -300,7 +304,6 @@ body{
         left: 0;
         width: 100%;
     }
-
     .pie-de-pagina__informacion{
         display: block;
         height: auto;
@@ -318,7 +321,9 @@ body{
     .pie-de-pagina__informacion__redes{
         margin-top: 0.5rem;
     }
-
+    .pie-de-pagina__suscripcion__input:focus{
+        width: 7rem;
+    }
 }
 
 @media only screen and (max-width:610px){
@@ -330,7 +335,6 @@ body{
                              "lista lista";
     }
     .cabecera{
-
         height: auto;
         display: block;
     }
