@@ -214,6 +214,41 @@ body{
     height: 5rem;
     border-radius: 50%;
 }
+/*-----------------------------------Proximo-----------------------------------------------*/
+.contenedor-terciario{
+    width: 100%;
+    margin-left: 1rem;
+}
+.contenedor-terciario__animes{
+    display: flex;
+}
+.contenedor-terciario__animes__item{
+    width: 9rem;
+    height: 13rem;
+    margin-left: 1rem;
+}
+.contenedor-terciario__animes__item__portada{
+    width: 100%;
+}
+.contenedor-terciario__animes__item__titulo{
+    position: relative;
+    bottom: 10rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.contenedor-terciario__animes__item__separacion{
+    position: relative;
+    bottom: 10rem;
+    color: white;
+}
+.contenedor-terciario__animes__item__informacio{
+    position: relative;
+    bottom: 10rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
 /*----------------------------------Footer-------------------------------------------------*/
 .pie-de-pagina{
     color: white;
@@ -298,6 +333,14 @@ body{
     .cabecera__buscar:focus{
         width: 97%;
     }
+    .contenedor-terciario{
+        margin-left: 0;
+    }
+    .contenedor-terciario__animes{
+        overflow-x: scroll;
+        display: flex;
+        overflow-y: hidden;
+    }
     .pie-de-pagina{
         color: white;
         background: black;
@@ -379,6 +422,14 @@ body{
     }
     .cabecera__buscar:focus{
         width: 97%;
+    }
+    .contenedor-terciario{
+        margin-left: 0;
+    }
+    .contenedor-terciario__animes{
+        overflow-x: scroll;
+        display: flex;
+        overflow-y: hidden;
     }
     .pie-de-pagina{
         color: white;
