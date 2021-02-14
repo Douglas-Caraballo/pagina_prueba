@@ -221,6 +221,7 @@ body{
 }
 .contenedor-terciario__animes{
     display: flex;
+    flex-wrap: wrap;
 }
 .contenedor-terciario__animes__item{
     width: 9rem;
@@ -340,6 +341,7 @@ body{
         overflow-x: scroll;
         display: flex;
         overflow-y: hidden;
+        flex-wrap: nowrap;
     }
     .pie-de-pagina{
         color: white;
@@ -349,7 +351,6 @@ body{
         left: 0;
         width: 100%;
     } 
-    
     .pie-de-pagina__informacion{
         display: block;
         height: auto;
@@ -387,8 +388,7 @@ body{
     }
 }
 
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:670px){
     .contenedor-principal{
         width: 100%;
     }
@@ -430,6 +430,7 @@ body{
         overflow-x: scroll;
         display: flex;
         overflow-y: hidden;
+        flex-wrap: nowrap;
     }
     .pie-de-pagina{
         color: white;
@@ -443,7 +444,7 @@ body{
     .pie-de-pagina__informacion{
         display: block;
         height: auto;
-        text-align: center;
+        text-align: center;  
     }
     .pie-de-pagina__informacion__link{
         display: block;
@@ -475,8 +476,18 @@ body{
     .pie-de-pagina__suscripcion__input:focus{
         width: 7rem;
     }
-
 }  
+
+@media only screen and (max-width:820px){
+    .contenedor-terciario{
+        margin-left: 0;
+    }
+    .contenedor-terciario__animes{
+        overflow-x: scroll;
+        display: flex;
+        overflow-y: hidden;
+    }
+}
 @media only screen and (max-width:1050px){
     .contenedor-principal{
         width: 100%;

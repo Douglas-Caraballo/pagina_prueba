@@ -400,6 +400,9 @@ body{
     .pie-de-pagina__informacion__redes{
         margin-top: 0.5rem;
     }
+    .pie-de-pagina__suscripcion__input:focus{
+        width: 7rem;
+    }
 
 }
 @media only screen and (max-width:1100px){
