@@ -46,6 +46,13 @@ body{
     height: 1.7rem;
     margin-left: -2.5rem;
 }
+.cabecera__link-aleatorio{
+    position: absolute;
+    right: 5%;
+}
+.cabecera__link-aleatorio__texto{
+    font-size: 0.5rem;
+}
 /*----------------------------------------Body----------------------------------------------*/
 .contenedor{
     display: flex;
@@ -214,10 +221,18 @@ body{
     height: 5rem;
     border-radius: 50%;
 }
+.contenedor-secundario__capitulos__item__imagen-ver-mas{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
 /*-----------------------------------Proximo-----------------------------------------------*/
 .contenedor-terciario{
     width: 100%;
     margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 .contenedor-terciario__animes{
     display: flex;
@@ -227,6 +242,7 @@ body{
     width: 9rem;
     height: 13rem;
     margin-left: 1rem;
+    cursor: pointer;
 }
 .contenedor-terciario__animes__item__portada{
     width: 100%;
@@ -235,7 +251,7 @@ body{
     position: relative;
     bottom: 10rem;
     text-align: center;
-    color: white;
+    color: #0c2026;
     font-weight: bold;
 }
 .contenedor-terciario__animes__item__separacion{
@@ -249,6 +265,9 @@ body{
     color: white;
     text-align: center;
     font-weight: bold;
+}
+.contenedor-terciario__animes__item:hover{
+    scale: 1.2;
 }
 /*----------------------------------Footer-------------------------------------------------*/
 .pie-de-pagina{
@@ -386,6 +405,9 @@ body{
     .pie-de-pagina__suscripcion__input:focus{
         width: 7rem;
     }
+    .cabecera__link-aleatorio{
+        display: none;
+    }
 }
 
 @media only screen and (max-width:670px){
@@ -476,6 +498,9 @@ body{
     .pie-de-pagina__suscripcion__input:focus{
         width: 7rem;
     }
+    .cabecera__link-aleatorio{
+        display: none;
+    }
 }  
 
 @media only screen and (max-width:820px){
@@ -486,6 +511,9 @@ body{
         overflow-x: scroll;
         display: flex;
         overflow-y: hidden;
+    }
+    .cabecera__link-aleatorio{
+        display: none;
     }
 }
 @media only screen and (max-width:1050px){
