@@ -45,6 +45,7 @@ body{
     border-radius: 2rem;
     height: 1.7rem;
     margin-left: -2.5rem;
+    background-color: white;
 }
 .cabecera__link-aleatorio{
     position: absolute;
@@ -96,7 +97,7 @@ body{
     padding: 0.5rem;
     border: solid white 0.2rem;
     border-radius: 50%;
-    margin-left: 0.2rem;
+    margin-left: 0.25rem;
 }
 .contenedor__notifificacion__boton{
     border: none;
@@ -267,7 +268,7 @@ body{
     font-weight: bold;
 }
 .contenedor-terciario__animes__item:hover{
-    scale: 1.2;
+    transform: scale(1.2);
 }
 /*----------------------------------Footer-------------------------------------------------*/
 .pie-de-pagina{
