@@ -199,6 +199,15 @@ body{
 .contenedor-secundario{
     padding-left: 3rem; 
 }
+.contenedor-secundario__contenedor-titulos{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: #0c2026;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 16.5rem;
+}
 .contenedor-secundario__capitulos__item{
     margin-left: 1rem;
     display: flex;

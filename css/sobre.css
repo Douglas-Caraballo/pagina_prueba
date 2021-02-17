@@ -138,6 +138,7 @@ body{
     padding-bottom: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    margin-top: 0.1rem;
 }
 .carta__redes__icono{
     border-right: 0.1rem solid;
